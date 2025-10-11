@@ -13,7 +13,7 @@ export default function RightPanel({
     return (
       <div className="side-card">
         <h3>Task Status</h3>
-        <p className="muted">Click tickets on the left to add them here.</p>
+        <p className="muted">Click tickets on the left.</p>
         <div className="muted small">Queued: 0</div>
         <div className="empty-box">No items in the queue.</div>
       </div>
@@ -44,7 +44,7 @@ export default function RightPanel({
 
             <div className="rp-item-actions">
               <button className="btn tiny primary" onClick={() => onResolveOne?.(t.id)}>
-                Resolve
+                Complete
               </button>
               <button className="btn tiny ghost" onClick={() => onRemoveOne?.(t.id)}>
                 Remove
@@ -54,7 +54,7 @@ export default function RightPanel({
         ))}
       </div>
 
-      <p className="muted small">Tip: Click more tickets on the left to keep adding here.</p>
+      {/* <p className="muted small">Tip: Click more tickets on the left to keep adding here.</p> */}
     </div>
   );
 }
